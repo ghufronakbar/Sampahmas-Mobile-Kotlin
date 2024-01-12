@@ -14,10 +14,14 @@ vending machines.
 Application Display:
 
 1. Loading Screen
+
+
 ![WhatsApp Image 2024-01-12 at 15 16 41_bdc9fbd9](https://github.com/ghufronakbar/sampahmas/assets/104415819/8868a1e2-6ad5-47ab-a98c-9913282965ae)
 
 
 2. Login Page
+
+
 ![WhatsApp Image 2024-01-12 at 15 18 32_1508c3bb](https://github.com/ghufronakbar/sampahmas/assets/104415819/7f014126-7105-46ed-b7a1-883cd3bf0dff)
 
 
