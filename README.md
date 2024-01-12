@@ -16,7 +16,7 @@ Application Display:
 1. Loading Screen
 
 
-![WhatsApp Image 2024-01-12 at 15 16 41_bdc9fbd9](https://github.com/ghufronakbar/sampahmas/assets/104415819/8868a1e2-6ad5-47ab-a98c-9913282965ae)
+![WhatsApp Image 2024-01-12 at 15 16 41_bdc9fbd9](https://github.com/ghufronakbar/sampahmas/assets/104415819/8868a1e2-6ad5-47ab-a98c-9913282965ae | width=100)
 
 
 2. Login Page
