@@ -16,11 +16,14 @@ Application Display:
 1. Loading Screen
 ![WhatsApp Image 2024-01-12 at 15 16 41_bdc9fbd9](https://github.com/ghufronakbar/sampahmas/assets/104415819/8868a1e2-6ad5-47ab-a98c-9913282965ae)
 
+
 2. Login Page
 ![WhatsApp Image 2024-01-12 at 15 18 32_1508c3bb](https://github.com/ghufronakbar/sampahmas/assets/104415819/7f014126-7105-46ed-b7a1-883cd3bf0dff)
 
+
 3. Register Page
 ![IMG-20240112-WA0044](https://github.com/ghufronakbar/sampahmas/assets/104415819/f7a22976-ccf9-4ff9-9644-36547a5a0922)
+
 
 4. Home Screen
 ![IMG-20240112-WA0059](https://github.com/ghufronakbar/sampahmas/assets/104415819/1cd2434c-c56e-4045-94e0-91563859d336) ![IMG-20240112-WA0045](https://github.com/ghufronakbar/sampahmas/assets/104415819/b8b532de-4257-4c6e-815f-bd25283ed9e6)
