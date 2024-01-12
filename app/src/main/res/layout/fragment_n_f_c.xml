@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentsQR_NFC.QrCodeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvQR"
+        android:layout_width="327dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvtutornfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Tempelkan KTP atau Handphone anda"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iNfc"
+                app:layout_constraintVertical_bias="0.13" />
+
+            <TextView
+                android:id="@+id/tvNamaUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Lanjar Samadi"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.81" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvNamaUser">
+
+                <ImageView
+                    android:id="@+id/iPoints"
+                    android:layout_width="13dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/point" />
+
+                <TextView
+                    android:id="@+id/tvPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:fontFamily="@font/outfit_thin"
+                    android:text="2000"
+                    android:textColor="#656565" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:fontFamily="@font/outfit_thin"
+                    android:text="points"
+                    android:textColor="#656565" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iInfoQR"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/infoseamless"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iNfc"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/contactless"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.26" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvQR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvJudulScanQR"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="How To Scan Your NFC"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvCaraScanQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvJudulScanQR"
+                android:layout_centerHorizontal="true"
+                android:autoLink="all"
+                android:fontFamily="@font/outfit_light"
+                android:gravity="center|left"
+                android:lineSpacingExtra="6sp"
+                android:padding="20dp"
+                android:text="1. Prepare your Smartphone/KTP\n2. Attach your Smartphone/KTP to The Vending Machine\n3. Wait for the vending machine to respond\n4. Make sure the data that appears on the vending machine matches your data\n5. Finally insert the used plastic bottle into the vending machine"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

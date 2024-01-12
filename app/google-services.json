@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "719575468814",
+    "firebase_url": "https://sampahmas-3a4f0-default-rtdb.firebaseio.com",
+    "project_id": "sampahmas-3a4f0",
+    "storage_bucket": "sampahmas-3a4f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719575468814:android:c4c73ac0d9b79818b7655f",
+        "android_client_info": {
+          "package_name": "com.example.sampahmasgabungan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719575468814-vjv4k3bs8c70h304pqpvqdjf00rm0dlu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sampahmasgabungan",
+            "certificate_hash": "955d6aaf357044f0352add5600577d82e891bb60"
+          }
+        },
+        {
+          "client_id": "719575468814-n4dev2l8vriog29913vbp02np8nc6d72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW8zq7VKvKbxcGdtzq8Kr93W9vWe8Jhok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719575468814-n4dev2l8vriog29913vbp02np8nc6d72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

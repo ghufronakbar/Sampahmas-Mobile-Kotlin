@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentsMyOrders.DeliveryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="343dp"
+        android:layout_height="172dp"
+        app:cardBackgroundColor="#F3F3F3"
+        app:cardElevation="5dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:src="@drawable/shoppingbag" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="No orders yet" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="delivery" />
+
+</RelativeLayout>

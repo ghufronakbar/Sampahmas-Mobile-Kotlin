@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        app:cardElevation="5dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="366dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imag1"
+            android:layout_width="83dp"
+
+            android:layout_height="83dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            app:cardBackgroundColor="#EFEFEF"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/titleInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_blackitalic"
+                android:gravity="center|center_vertical"
+                android:lineSpacingExtra="-10dp"
+                android:text="UMBRELLA"
+                android:textColor="#A7A7AC"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageObj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="false"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/payung" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="Recycled Umbrella"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desid"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:text="an umbrella made from recycled recycled plastic waste."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hargaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="75dp"
+            android:text="Rp 20000"
+            android:textSize="12sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="Edit"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                app:srcCompat="@drawable/pencil" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="82dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="105dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/minusId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/totalItemId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/plusId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

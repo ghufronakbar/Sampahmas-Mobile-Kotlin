@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iBackgrounds"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_height="535dp"
+            android:src="@drawable/backgroundprofil"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/introAnimation"
+        android:layout_width="220dp"
+        android:layout_height="195dp"
+        android:src="@drawable/pop_animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96">
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/outfit_light"
+            android:text="Welcome to"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="246dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="the best marketplace platform that can turn your plastic waste into gold.
+
+\n\nJoin For Free."
+            android:textColor="#7B7F9E" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cSignInGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/devicon_google" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="Sign in with google"
+                    android:textColor="#71CFB9" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/bSignIn"
+                android:layout_width="150dp"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#71CFB9"
+                android:text="Sign in"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/outfit_regular"
+            android:textSize="12sp"
+            android:text="Use Social Login"
+            android:textColor="#7B7F9E" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/iInstagram"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:id="@+id/iTwitter"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/iFacebook"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/facebook" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="15sp"
+                android:text="Don’t have any account?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="15sp"
+                android:text="@string/sign_up"
+                android:textColor="#71CFB9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

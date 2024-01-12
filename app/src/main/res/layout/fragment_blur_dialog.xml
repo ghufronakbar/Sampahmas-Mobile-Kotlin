@@ -1,0 +1,47 @@
+<!-- res/layout/fragment_blur_dialog.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp">
+
+    <!-- View untuk background yang blur -->
+    <ImageView
+        android:id="@+id/blurView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        android:background="#00000000"/>
+
+    <!-- Konten pop-up -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!-- QR code ImageView -->
+        <ImageView
+            android:id="@+id/qrCodeImageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/qrcodeimage"
+            android:background="@drawable/rounded_corner_background"/>
+
+        <!-- Button close -->
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="#00FFFFFF" />
+    </LinearLayout>
+
+    <!-- View untuk efek gelap -->
+    <View
+        android:id="@+id/backgroundDim"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#00000000" />
+</FrameLayout>

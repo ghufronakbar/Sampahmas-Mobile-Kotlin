@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">SAMPAHMAS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="sign_in"><u>Sign In</u></string>
+    <string name="agree"><u>I agree to the Terms and Conditions , Privacy Policy and  Terms of Service.</u></string>
+    <string name="webclientid">719575468814-n4dev2l8vriog29913vbp02np8nc6d72.apps.googleusercontent.com</string>
+    <string name="google_map_api_key">AIzaSyC9gkfPHw8ENurnT4Yi2na5VQ3S7dzqnJc</string>
+    <string name="back2menu"><u>back to main menu</u></string>
+    <string name="ketentuanUmum">
+    <![CDATA[
+    <ul>
+        <li>Aplikasi Sampahmas adalah sebuah aplikasi e-commerce yang terintegrasi dengan vending machine sampah. Aplikasi ini memungkinkan pengguna untuk menukarkan sampah menjadi point yang dapat digunakan untuk potongan harga saat berbelanja di toko yang bekerja sama dengan Sampahmas.</li>
+        <li>Dengan menggunakan aplikasi Sampahmas, pengguna menyetujui untuk terikat dengan ketentuan dan syarat yang berlaku. Ketentuan dan syarat ini berlaku sejak tanggal ditandatangani oleh [Nama Perusahaan] dan pengguna.</li>
+        <li>Sampahmas berhak untuk mengubah ketentuan dan syarat ini sewaktu-waktu tanpa pemberitahuan terlebih dahulu.</li>
+    </ul>
+    ]]>
+</string>
+
+    <string name="registrasi">
+    <![CDATA[
+    <ul>
+        <li>Untuk menggunakan aplikasi Sampahmas, pengguna harus terlebih dahulu melakukan registrasi dengan mengisi data diri yang diperlukan. Data diri yang diperlukan meliputi nama, alamat, nomor telepon, dan alamat email.</li>
+        <li>Pengguna bertanggung jawab atas kebenaran data yang diisikan. Sampahmas tidak bertanggung jawab atas kesalahan atau kerugian yang timbul akibat kesalahan data yang diisikan oleh pengguna.</li>
+        <li>Sampahmas berhak untuk menolak registrasi pengguna jika data yang diisikan tidak lengkap atau tidak benar.</li>
+    </ul>
+    ]]>
+</string>
+
+    <string name="akun">
+    <![CDATA[
+    <ul>
+        <li>Pengguna bertanggung jawab atas keamanan akunnya. Pengguna dilarang memberikan akses akunnya kepada pihak lain.</li>
+        <li>Sampahmas tidak bertanggung jawab atas kehilangan atau penyalahgunaan akun yang disebabkan oleh kelalaian pengguna.</li>
+    </ul>
+    ]]>
+</string>
+
+    <string name="penggunaanAplikasi">
+    <![CDATA[
+    <ul>
+        <li>Pengguna dapat menggunakan aplikasi Sampahmas untuk menukarkan sampah menjadi point. Point dapat digunakan untuk potongan harga saat berbelanja di toko yang bekerja sama dengan Sampahmas.</li>
+        <li>Pengguna dapat memperoleh point dengan cara menukarkan sampah, menyelesaikan daily mission, atau mengikuti promo yang diadakan oleh Sampahmas. Sampahmas berhak untuk mengubah kebijakan penukaran sampah menjadi point sewaktu-waktu.</li>
+        <li>Vending machine sampah yang terintegrasi dengan aplikasi Sampahmas memiliki fitur NFC dan QR Code untuk membaca akun pengguna. Pengguna dapat menggunakan fitur NFC atau QR Code untuk melakukan penukaran sampah menjadi point.</li>
+        <li>Sampahmas berhak untuk mengubah kebijakan penggunaan vending machine sampah sewaktu-waktu.<li>
+    </ul>
+    ]]>
+</string>
+
+    <string name="penjualan">
+    <![CDATA[
+    <ul>
+        <li>Sampahmas melarang pengguna untuk melakukan penjualan atau transaksi barang ilegal melalui aplikasi Sampahmas. Barang ilegal yang dimaksud meliputi barang-barang yang dilarang atau dibatasi oleh peraturan perundang-undangan yang berlaku.</li>
+        <li>Pengguna yang melanggar ketentuan ini dapat dikenakan sanksi oleh Sampahmas, termasuk tetapi tidak terbatas pada:
+            <ul>
+                <li>Peringatan</li>
+                <li>Pemblokiran akun</li>
+                <li>Penghapusan data</li>
+                <li>Penuntutan hukum</li>
+            </ul>
+        </li>
+        <li>Contoh Barang Ilegal yang Dilarang Dijual atau Ditransaksikan Melalui Aplikasi Sampahmas:
+            <ul>
+                <li>Barang-barang yang dilarang impor atau ekspor, seperti narkotika, senjata api, dan barang-barang yang mengandung zat berbahaya.</li>
+                <li>Barang-barang yang dilarang untuk diperjualbelikan secara umum, seperti barang-barang yang mengandung unsur SARA atau pornografi.</li>
+                <li>Barang-barang yang tidak memiliki izin edar, seperti obat-obatan dan makanan.</li>
+            </ul>
+        </li>
+    </ul>
+    ]]>
+</string>
+
+    <string name="kebijakanPrivasi">
+    <![CDATA[
+    <ul>
+        <li>Sampahmas mengumpulkan data pribadi pengguna untuk keperluan operasional aplikasi. Data pribadi pengguna meliputi nama, alamat, nomor telepon, alamat email, dan data sampah yang ditukarkan.</li>
+        <li>Data pribadi pengguna akan dijaga kerahasiaannya. Sampahmas hanya akan menggunakan data pribadi pengguna untuk keperluan operasional aplikasi, penelitian, atau pengembangan aplikasi.</li>
+    </ul>
+    ]]>
+</string>
+
+
+    <string name="layananPelanggan">
+    <![CDATA[
+    <ul>
+        <li>Pengguna dapat menghubungi layanan pelanggan Sampahmas untuk mendapatkan bantuan.</li>
+        <li>Layanan pelanggan Sampahmas dapat dihubungi melalui email, telepon, atau media sosial.</li>
+    </ul>
+    ]]>
+</string>
+
+    <string name="penyalahgunaanAplikasi">
+    <![CDATA[
+    <ul>
+        <li>Pengguna dilarang untuk menggunakan aplikasi Sampahmas untuk tujuan yang melanggar hukum atau peraturan yang berlaku.</li>
+        <li>Pengguna dilarang untuk menggunakan aplikasi Sampahmas untuk menyebarkan informasi yang bersifat palsu, menyesatkan, atau mengandung unsur SARA.</li>
+        <li>Pengguna dilarang untuk menggunakan aplikasi Sampahmas untuk membobol atau merusak sistem aplikasi.</li>
+        <li>Pengguna dilarang untuk menggunakan aplikasi Sampahmas untuk mengumpulkan data pribadi pengguna lain tanpa izin.</li>
+    </ul>
+    <br/>
+    <p><b>Penyalahgunaan Asset atau Infrastruktur Aplikasi</b></p>
+    <ul>
+        <li>Pengguna dilarang untuk menggunakan asset atau infrastruktur aplikasi Sampahmas untuk tujuan yang tidak sesuai dengan ketentuan dan syarat yang berlaku.</li>
+        <li>Pengguna dilarang untuk melakukan tindakan yang dapat mengganggu atau merusak asset atau infrastruktur aplikasi Sampahmas.</li>
+        <li>Pengguna dilarang untuk melakukan tindakan yang dapat membahayakan pengguna lain atau pihak ketiga.</li>
+    </ul>
+    <br/>
+    <p><b>Sanksi</b></p>
+    <ul>
+        <li>Sampahmas berhak untuk mengambil tindakan terhadap pengguna yang melanggar ketentuan dan syarat yang berlaku.</li>
+        <li>Tindakan yang dapat diambil oleh Sampahmas meliputi:
+            <ul>
+                <li>Peringatan</li>
+                <li>Pemblokiran akun</li>
+                <li>Penghapusan data</li>
+                <li>Penuntutan hukum</li>
+            </ul>
+        </li>
+    </ul>
+    <br/>
+    <p>Berikut adalah beberapa contoh penyalahgunaan aplikasi atau data, asset maupun infrastruktur aplikasi yang dapat ditambahkan ke dalam Terms & Conditions Anda:</p>
+    <ul>
+        <li>Pengguna yang menggunakan aplikasi Sampahmas untuk menukarkan sampah palsu atau sampah yang tidak memenuhi syarat.</li>
+        <li>Pengguna yang menggunakan aplikasi Sampahmas untuk mengumpulkan point secara curang, misalnya dengan menggunakan bot atau perangkat lain.</li>
+        <li>Pengguna yang menggunakan aplikasi Sampahmas untuk menyebarkan informasi yang bersifat hoax atau propaganda.</li>
+        <li>Pengguna yang membobol sistem aplikasi Sampahmas untuk mencuri data pengguna lain.</li>
+        <li>Pengguna yang merusak vending machine sampah.</li>
+    </ul>
+    ]]>
+</string>
+
+
+    <string name="pembubaranAkun">
+    <![CDATA[
+    <ul>
+        <li>Sampahmas berhak untuk membubarkan akun pengguna jika pengguna melanggar ketentuan dan syarat yang berlaku.</li>
+        <li>Pengguna yang akunnya dibubarkan tidak berhak atas point yang dimilikinya.</li>
+    </ul>
+    ]]>
+</string>
+
+    <string name="penyelesaianSengketa">
+    <![CDATA[
+    <ul>
+        <li>Segala perselisihan yang timbul sehubungan dengan penggunaan aplikasi Sampahmas akan diselesaikan secara musyawarah.</li>
+        <li>Jika musyawarah tidak berhasil, maka perselisihan akan diselesaikan melalui jalur hukum.</li>
+    </ul>
+    ]]>
+</string>
+
+
+
+
+</resources>

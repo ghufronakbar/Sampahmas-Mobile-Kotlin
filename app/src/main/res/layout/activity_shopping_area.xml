@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D8DE"
+    tools:context=".Shopping_Area">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/iBack"
+            android:layout_width="42dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#00000000"
+            android:foregroundGravity="center"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Titleid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_black"
+            android:text="RECYCLED UMBRELLA"
+            android:textColor="#242424"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.218"
+            app:layout_constraintStart_toEndOf="@+id/iBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.369" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loveId"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toEndOf="@+id/Titleid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.363">
+
+            <ImageView
+                android:id="@+id/loveeid"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/tb_wish0" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewId"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="#DFDFE5"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_blackitalic"
+            android:gravity="center"
+            android:lineSpacingExtra="-50dp"
+            android:text="RECYCLED UMBRELLA"
+            android:textAlignment="center"
+            android:textColor="#A7A7AC"
+            android:textSize="80dp" />
+
+
+        <ImageView
+            android:id="@+id/imageObj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/payung" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        app:cardCornerRadius="37.68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewId">
+
+        <ImageView
+            android:id="@+id/imageId"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="38dp"
+            app:srcCompat="@drawable/bumi" />
+
+        <Button
+            android:id="@+id/contactSeller"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="37dp"
+            android:layout_marginBottom="42dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/chat"
+            android:text="Contact Seller"
+            android:textColor="#71CFB9"
+            app:cornerRadius="15.16dp"
+            app:strokeColor="#71CFB9"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/buyNow"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="37dp"
+            android:layout_marginBottom="42dp"
+            android:backgroundTint="#71CFB9"
+            android:src="@drawable/chat"
+            android:text="Buy Now"
+            android:textColor="#ffffff"
+            app:cornerRadius="15.16dp"
+            app:strokeColor="#71CFB9"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            android:id="@+id/Nameid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="38dp"
+            android:text="By Sampahmas"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/objName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="63dp"
+            android:fontFamily="@font/outfit_edium"
+            android:textStyle="bold"
+            android:text="Recycled Umbrella"
+            android:textSize="22.61dp"
+            />
+
+        <TextView
+            android:id="@+id/hargaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="95dp"
+            android:text="Rp 40.000"
+            android:textColor="#71CFB9"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="149dp"
+            android:text="Description"
+            android:textSize="16.96dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="182dp"
+            android:text="an umbrella made from recycled recycled plastic waste."
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

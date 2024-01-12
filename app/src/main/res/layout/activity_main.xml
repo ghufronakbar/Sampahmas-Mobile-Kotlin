@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BottomNavMenu"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/white"
+            app:menu="@menu/bottom_menu"
+            app:labelVisibilityMode="unlabeled"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemBackground="@null" /> <!-- Atur itemBackground menjadi null untuk menghilangkan indikasi klik -->
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

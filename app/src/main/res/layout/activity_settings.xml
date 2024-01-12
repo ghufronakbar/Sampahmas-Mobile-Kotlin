@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="#FFFFFF">
+
+    <ImageButton
+        android:id="@+id/iBack"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_semibold"
+        android:text="Settings"
+        android:textColor="#000000"
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/textView44"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bendera" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153">
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_edium"
+            android:text="Notification"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Sound"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/outfit_extralight"/>
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:text="Vibrate"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/outfit_extralight"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView15"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469">
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_edium"
+            android:text="Privacy and Permissions"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/outfit_extralight"
+            android:text="Microphone"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/outfit_extralight"
+            android:text="Camera"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/outfit_extralight"
+            android:text="Location"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView14"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798">
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_edium"
+            android:text="Security and Privacy"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/outfit_extralight"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/switch8"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/outfit_extralight"
+            android:text="Allow Apps to track your network"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bLogout"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#71CFB9"
+        android:fontFamily="@font/outfit_extralight"
+        android:text="logout"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView14"
+        app:layout_constraintVertical_bias="0.368"
+        app:strokeColor="#71CFB9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Version 1.0.0  ©2023 SampahMas Inc."
+        android:textAlignment="center"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:textColor="#868889"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

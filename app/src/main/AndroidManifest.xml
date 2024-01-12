@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SAMPAHMAS"
+        tools:targetApi="31">
+        <activity
+            android:name=".TermsConditions"
+            android:exported="false" />
+        <activity
+            android:name=".chat"
+            android:exported="false" />
+        <activity
+            android:name=".payment.WishlistMidtrans"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutWishlistDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WishlistCheckoutDetail"
+            android:exported="false" />
+        <activity
+            android:name=".payment.topupMidtrans"
+            android:exported="false" />
+        <activity
+            android:name=".Loading"
+            android:exported="false" />
+        <activity
+            android:name=".Top_Up"
+            android:exported="false" />
+        <activity
+            android:name=".Intro"
+            android:exported="false" />
+        <activity
+            android:name=".PopupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditAlamat"
+            android:exported="false" />
+        <activity
+            android:name=".payment.paymentMidtrans"
+            android:exported="false" />
+        <activity
+            android:name=".payments.PaymentMidtrans"
+            android:exported="false" />
+        <activity
+            android:name=".Popup"
+            android:exported="false" />
+        <activity
+            android:name=".Checkout_Detail"
+            android:exported="false" />
+        <activity
+            android:name=".Detailed_Product"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+
+        <activity
+            android:name=".Nearby"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_Up"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Wishlist"
+            android:exported="false" />
+        <activity
+            android:name=".Status_Data_QR_NFC"
+            android:exported="false" />
+        <activity
+            android:name=".Data_QR_NFC"
+            android:exported="false" />
+        <activity
+            android:name=".Daily_Mission"
+            android:exported="false" />
+        <activity
+            android:name=".CheckOut_Area"
+            android:exported="false" />
+        <activity
+            android:name=".Shopping_Area"
+            android:exported="false" />
+        <activity
+            android:name=".Green_Market"
+            android:exported="false" />
+        <activity
+            android:name=".MyOrders"
+            android:exported="false" />
+        <activity
+            android:name=".profil_edits"
+            android:exported="false" />
+        <activity
+            android:name=".profil"
+            android:exported="false" />
+        <activity
+            android:name=".Balance"
+            android:exported="false" />
+        <activity
+            android:name=".more_menu"
+            android:exported="false" />
+        <activity
+            android:name=".activity_QR_NFC"
+            android:exported="false" />
+        <activity
+            android:name=".Intro_Animation"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

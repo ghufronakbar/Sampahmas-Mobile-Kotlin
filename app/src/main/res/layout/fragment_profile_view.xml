@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/iBackgrounds"
+                android:layout_width="wrap_content"
+                android:layout_height="535dp"
+                android:src="@drawable/backgroundprofil"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/iLogo"
+                android:layout_width="146dp"
+                android:layout_height="27dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logosm"
+                app:srcCompat="@drawable/logosm" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvProfilePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                android:layout_marginTop="55dp"
+                android:layout_below="@id/iLogo"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="0dp"
+                tools:ignore="NotSibling">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iProfilePicture"
+                    app:civ_border_width="1dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/user_profile"
+                    app:civ_border_color="#FF000000"
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDetailsAccount"
+                android:layout_width="343dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPaddingBottom="20dp"
+                android:layout_below="@id/cvProfilePicture"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/iPercentage"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/circlepercentage" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textAlignment="center"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginRight="62dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="200 Bottle"
+                    android:textSize="8sp"
+                    android:textColor="#5CD5B9" />
+
+                <ImageView
+                    android:id="@+id/iEditProfile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/writing" />
+
+                <ImageView
+                    android:id="@+id/iUsername"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:src="@drawable/id_card" />
+
+                <ImageView
+                    android:id="@+id/iPoints"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="95dp"
+                    android:src="@drawable/point" />
+
+                <ImageView
+                    android:id="@+id/iRegistered"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="135dp"
+                    android:src="@drawable/deadline" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Detail Account"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/lUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Username"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_extralight"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lTotalPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Total Point"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_extralight"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_extralight"
+                            android:text=" Points"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lRegistered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="130dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Registered Since"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvNik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_extralight"
+                        android:text="08/09/2003"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tMyOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="24sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="My Orders"
+                android:layout_below="@id/cvDetailsAccount"/>
+
+            <LinearLayout
+                android:id="@+id/llmyOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:layout_below="@+id/tMyOrders">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iUnpaid"
+                            android:layout_width="68dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/unpaid" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tUnpaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Unpaid"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iPackaging"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/packaging" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPackaging"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Packaging"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iDelivery"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/delivery" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tDelivery"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:gravity="center"
+                        android:text="Delivery"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iRating"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/rating" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Rating"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tPointAccumulated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="24sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Point Accumulated"
+                android:layout_below="@id/llmyOrders"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:layout_below="@id/tPointAccumulated"
+                app:cardElevation="0dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="165dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="165dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iDataPerDays"
+                        android:layout_width="115dp"
+                        android:layout_height="74dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-28dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/dataperday" />
+
+                    <TextView
+                        android:id="@+id/tPointsAccumulated"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="62dp"
+                        android:fontFamily="@font/outfit_medium"
+                        android:text="Points Accumulated"
+                        android:textAlignment="center"
+                        android:textColor="#A7A7AC"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/tPointsPerDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="2000 Points"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tPerDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/outfit_extralight"
+                            android:text="/day"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="165dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="165dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iDataPerDay"
+                        android:layout_width="115dp"
+                        android:layout_height="74dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-28dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/dataperday" />
+
+                    <TextView
+                        android:id="@+id/tBottlesAccumulated"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="62dp"
+                        android:fontFamily="@font/outfit_medium"
+                        android:text="Bottles Accumulated"
+                        android:textAlignment="center"
+                        android:textColor="#A7A7AC"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/tBottlesPerDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="12 Bottles"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tPerDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/outfit_extralight"
+                            android:text="/day"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

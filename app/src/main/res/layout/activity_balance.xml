@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".more_menu">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FEFEFE"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/iBack"
+            android:layout_width="42dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iLogo"
+            android:layout_width="146dp"
+            android:layout_height="27dp"
+            android:src="@drawable/logosm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logosm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Rp 440.000"
+                    android:textSize="20sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="33dp"
+                    app:cardCornerRadius="9dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iPoints"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="2dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/point" />
+
+                        <TextView
+                            android:id="@+id/tvPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="2dp"
+                            android:fontFamily="@font/outfit_semibold"
+                            android:text="2000"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llmenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foregroundGravity="center"
+                        android:gravity="center|top"
+                        android:orientation="horizontal"
+                        android:padding="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="111dp"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="#00FFFFFF"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="5dp"
+                                app:cardMaxElevation="10dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <ImageButton
+                                    android:id="@+id/iTopUp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="#FFFFFF"
+                                    android:elevation="20dp"
+                                    android:padding="12dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/top_up" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tTopUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:fontFamily="@font/outfit_regular"
+                                android:text="Top Up"
+                                android:textColor="#818181" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="111dp"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="#00FFFFFF"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="5dp"
+                                app:cardMaxElevation="10dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <ImageButton
+                                    android:id="@+id/iTransferBank"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="#FFFFFF"
+                                    android:elevation="20dp"
+                                    android:padding="12dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/transfer_bank" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tTransferBank"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/outfit_regular"
+                                android:text="Transfer Bank"
+                                android:textAlignment="center"
+                                android:textColor="#818181" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="111dp"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="#00FFFFFF"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="5dp"
+                                app:cardMaxElevation="10dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <ImageButton
+                                    android:id="@+id/iSampayPinjam"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="#FFFFFF"
+                                    android:elevation="20dp"
+                                    android:padding="12dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/sampay_pinjam" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tSampayPinjam"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/outfit_regular"
+                                android:gravity="center"
+                                android:text="Sampay Pinjam"
+                                android:textColor="#818181" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="111dp"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="#00FFFFFF"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="5dp"
+                                app:cardMaxElevation="10dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <ImageButton
+                                    android:id="@+id/iSampayLater"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="#FFFFFF"
+                                    android:elevation="20dp"
+                                    android:padding="12dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/sampay_later" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tSampayLater"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/outfit_regular"
+                                android:text="Sampay Later"
+                                android:textAlignment="center"
+                                android:textColor="#818181" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llmenu2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foregroundGravity="center"
+                        android:gravity="top|left"
+                        android:orientation="horizontal"
+                        android:padding="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="111dp"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="#00FFFFFF"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="5dp"
+                                app:cardMaxElevation="10dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <ImageButton
+                                    android:id="@+id/iPromo"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="#FFFFFF"
+                                    android:elevation="20dp"
+                                    android:padding="12dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/promo" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tPromo"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:fontFamily="@font/outfit_regular"
+                                android:text="Voucher"
+                                android:textAlignment="center"
+                                android:textColor="#818181" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="111dp"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="#00FFFFFF"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="5dp"
+                                app:cardMaxElevation="10dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <ImageButton
+                                    android:id="@+id/iBayar"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="#FFFFFF"
+                                    android:elevation="20dp"
+                                    android:padding="12dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/scan" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tBayar"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:fontFamily="@font/outfit_regular"
+                                android:text="Bayar"
+                                android:textAlignment="center"
+                                android:textColor="#818181" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Transaction History"
+                android:textSize="20sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHistoryTopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:layout_marginHorizontal="40dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Popup">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPopUp1"
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPopUp"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="Pilih metode pembayaran"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btnTopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/outfit_extralight"
+            android:text="Top Up"
+            android:textColor="#71CFB9"
+            android:textSize="12sp"
+            app:cornerRadius="4dp"
+            app:strokeColor="#71CFB9"
+            app:strokeWidth="2dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="390dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Sampay"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="45dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                app:srcCompat="@drawable/point" />
+
+            <TextView
+                android:id="@+id/text30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/outfit_extralight"
+                android:text="Saldo:"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sampaySaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/outfit_extralight"
+                android:text="2000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="390dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="160dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="7dp"
+                android:text="Virtual Payment"
+                android:textSize="14sp"
+                android:fontFamily="@font/outfit_regular"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="45dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="25dp"
+                app:srcCompat="@drawable/cash"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/text31"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:text="Pay with your E-Wallet or Virtual Banking."
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/outfit_extralight"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/bSavePayment"
+            android:layout_width="348dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#71CFB9"
+            android:src="@drawable/chat"
+            android:text="Select Payment Method"
+            android:textColor="#ffffff"
+            app:cornerRadius="7dp"
+            app:strokeColor="#71CFB9"
+            app:strokeWidth="2dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbSampay"
+                android:layout_width="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                />
+
+            <RadioButton
+                android:id="@+id/rbCash"
+                android:layout_width="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+
+        </RadioGroup>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

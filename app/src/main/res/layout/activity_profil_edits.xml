@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profil_edits">
+
+    <ImageView
+        android:id="@+id/iBackgrounds"
+        android:layout_width="wrap_content"
+        android:layout_height="535dp"
+        android:src="@drawable/backgroundprofil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvDetailsAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cvProfilePicture"
+            app:contentPaddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Edit Profile"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="60dp"
+                android:hint=" Username"
+                app:boxBackgroundColor="#00FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeColor="#71CEB8"
+                app:hintTextColor="@color/GreenStatus">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawableTint="#757575"
+                    android:inputType="text|textWebEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="130dp"
+                android:hint=" Email"
+                app:boxBackgroundColor="#00FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeColor="#71CEB8"
+                app:hintTextColor="@color/GreenStatus"
+                app:placeholderText="example@example.com"
+                app:placeholderTextColor="#b0b0b0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawableTint="#757575"
+                    android:inputType="text|textWebEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="200dp"
+                android:hint=" Phone Number"
+                app:boxBackgroundColor="#00FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeColor="#71CEB8"
+                app:hintTextColor="@color/GreenStatus"
+                app:prefixText="+62">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawableTint="#757575"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="top|center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="270dp"
+                android:hint=" Address"
+                app:boxBackgroundColor="#00FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeColor="#71CEB8"
+                app:hintTextColor="@color/GreenStatus">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:drawableStart="@drawable/ic_address"
+                    android:drawableTint="#757575"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btSaveChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="430dp"
+                android:backgroundTint="#71CFB9"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Save Changes"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            app:cardElevation="0dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iProfilePicture"
+                app:civ_border_width="1dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user_profile"
+                app:civ_border_color="#FF000000"
+                android:layout_width="103dp"
+                android:layout_height="103dp"/>
+
+            <ImageView
+                android:id="@+id/iAddPhoto"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/plus_profile" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/iBack"
+            android:layout_width="42dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iLogo"
+            android:layout_width="146dp"
+            android:layout_height="27dp"
+            android:src="@drawable/logosm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logosm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".more_menu">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cTop"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Sampahmas Product"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/llmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center|top"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iNearby"
+                            android:layout_width="68dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/mnearby" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tNearby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Nearby"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iExchange"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/mexchange" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tExchange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Exchange"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iDailyMission"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/mdailymission" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tDailyMission"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:gravity="center"
+                        android:text="Daily Mission"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iGreenMarket"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/green_market" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tGreenMarket"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Green Market"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llmenu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:foregroundGravity="center"
+                android:gravity="top|left"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iSampayLater"
+                            android:layout_width="68dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sampay_later" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tSampayLater"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Sampay Later"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iSampayPinjam"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sampay_pinjam" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tSampayPinjam"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Sampay Pinjam"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iPromo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/promo" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPromo"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:gravity="center"
+                        android:text="Promo"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Bills"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/llmenu3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center|top"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iPDAM"
+                            android:layout_width="68dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/pdam" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPDAM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="PDAM"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iBPJS"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bpjs" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tBPJS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="BPJS"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iListrikPLN"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/listrik_pln" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tListrikPLN"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:gravity="center"
+                        android:text="Listrik PLN"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iInternetTVKabel"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/tv_kabel" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tInternetTVKabel"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Internet   TV Kabel"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Service"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/llmenu4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:foregroundGravity="center"
+                android:gravity="top|left"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iPickUpTrash"
+                            android:layout_width="68dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/pick_up_trash" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPickUpTrash"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Pick Up Trash"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iCleaningService"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/cleaning_service" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tCleaningService"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Cleaning Service"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iCustomerService"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/customer_service" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tCustomerService"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:gravity="center"
+                        android:text="Customer Service"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Top-Up"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/llmenu5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:foregroundGravity="center"
+                android:gravity="top|left"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iPulsa"
+                            android:layout_width="68dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/pulsa" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPulsa"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Pulsa"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iPaketData"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/paket_data" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPaketData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Paket Data"
+                        android:textAlignment="center"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iRoaming"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/roaming" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tRoaming"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:gravity="center"
+                        android:text="Roaming"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FEFEFE"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/iBack"
+            android:layout_width="42dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iLogo"
+            android:layout_width="146dp"
+            android:layout_height="27dp"
+            android:src="@drawable/logosm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logosm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

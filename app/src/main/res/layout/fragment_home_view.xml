@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="#FFFFFF"
+    tools:context=".HomeView">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/matrialCardView"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="50.9dp"
+                android:layout_marginTop="40dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="7.61dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconifiedByDefault="false"
+                    app:queryHint="Search your food here" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvKartu"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/matrialCardView">
+
+                <ImageView
+                    android:id="@+id/iKartuId"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:src="@drawable/kartuiddd"
+                    app:srcCompat="@drawable/kartuiddd" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="25dp">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:text="User"
+                        android:textColor="#FEFEFE" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_medium"
+                        android:paddingTop="15dp"
+                        android:text="Current Balance"
+                        android:textColor="#FEFEFE" />
+
+                    <TextView
+                        android:id="@+id/tvSaldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:text="Rp 0.00"
+                        android:textColor="#FEFEFE"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iPoints"
+                            android:layout_width="13dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="2dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/point" />
+
+                        <TextView
+                            android:id="@+id/tvPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="2dp"
+                            android:fontFamily="@font/outfit_semibold"
+                            android:text="0"
+                            android:textColor="#FEFEFE" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="2dp"
+                            android:fontFamily="@font/outfit_semibold"
+                            android:text="points"
+                            android:textColor="#FEFEFE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp">
+
+                        <TextView
+                            android:id="@+id/tvUid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="3308 **** **** ****"
+                            android:textColor="#FEFEFE"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/iCopy"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="2dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/copy" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/llmenu"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvKartu">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iNearby"
+                            android:layout_width="68dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/mnearby" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tNearby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Nearby"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iExchange"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/mexchange" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tExchange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="Exchange"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iDailyMission"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/mdailymission" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tDailyMission"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:gravity="center"
+                        android:text="Daily Mission"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageButton
+                            android:id="@+id/iSeeAll"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="#FFFFFF"
+                            android:elevation="20dp"
+                            android:padding="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/mseeall" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tSeeAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/outfit_regular"
+                        android:text="See all"
+                        android:textColor="#818181" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lStore"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llmenu">
+
+                <TextView
+                    android:id="@+id/idtext1"
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Official Store"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idtext2"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="70dp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:text="See more"
+                    android:textColor="#8D3C4558"
+                    android:textColorHint="#3C4558" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOfficialProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lStore">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvOfficialList"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llOfficialProduct">
+
+                <TextView
+                    android:id="@+id/idtext4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Recommended for you"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRecommendedLists"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="10dp" />
+
+
+                <!--                kanan-->
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mail"
+            android:src="@drawable/mail"
+            app:layout_constraintEnd_toStartOf="@+id/ibSettings" />
+
+        <ImageButton
+            android:id="@+id/ibSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/menu"
+            android:src="@drawable/menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/menu"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/iLogo"
+            android:layout_width="146dp"
+            android:layout_height="27dp"
+            android:src="@drawable/logosm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logosm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Add your tab bar content here -->
+
+
+</FrameLayout>

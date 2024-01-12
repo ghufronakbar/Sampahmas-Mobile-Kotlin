@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homes"
+        android:icon="@drawable/tb_home1"/>
+
+    <item
+        android:id="@+id/wish"
+        android:icon="@drawable/tb_wish1"/>
+
+    <item
+        android:id="@+id/market"
+        android:icon="@drawable/tb_market1"/>
+
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/tb_user1"/>
+</menu>

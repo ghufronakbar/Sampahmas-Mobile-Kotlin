@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TermsConditions">
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="AGREEMENT"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/outfit_semibold"
+        android:text="Terms and Conditions"
+        android:textColor="@color/GreenStatus"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="280dp"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Ketentuan Umum"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewKetentuanUmum"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ketentuanUmum"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Registrasi"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewRegistrasi"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registrasi"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Akun"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewAkun"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/akun"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Penggunaan Aplikasi"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewPenggunaanAplikasi"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/penggunaanAplikasi"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Penjualan dan Transaksi Barang Ilegal"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewPenjualan"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/penjualan"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Kebijakan Privasi"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewKebijakanPrivasi"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kebijakanPrivasi"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Layanan Pelanggan"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewLayananPelanggan"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/layananPelanggan"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. Penyalahgunaan Aplikasi atau Data"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewPenyalahgunaanAplikasi"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/penyalahgunaanAplikasi"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9. Pembubaran Akun"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewPembubaranAkun"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pembubaranAkun"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Penyelesaian Sengketa"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewPenyelesaianSengketa"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/penyelesaianSengketa"
+                android:fontFamily="@font/outfit_regular" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDecline"
+                android:layout_width="165dp"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Decline"
+                android:textColor="@color/grey"
+                android:textSize="17dp"
+                app:cornerRadius="10dp"
+                app:strokeColor="#71CFB9"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="165dp"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/GreenStatus"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Accept"
+                android:textSize="17dp"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

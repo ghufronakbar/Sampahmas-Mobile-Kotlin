@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="130dp"
+    android:id="@+id/cvOutside"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#EFEFEF"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tProdukKiri"
+            android:layout_width="158dp"
+            android:layout_height="74dp"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="Recycled Umbrella"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.158" />
+
+
+        <TextView
+            android:id="@+id/tHarga"
+            android:layout_width="99dp"
+            android:layout_height="27dp"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="Rp 40.000"
+            android:textAlignment="viewStart"
+            android:textColor="#5C5C5C"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tProdukKiri"
+            app:layout_constraintVertical_bias="0.483" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rUmbrella"
+        android:layout_height="wrap_content">
+
+        <!-- Other views -->
+
+        <TextView
+            android:id="@+id/tProdukKanan"
+            android:layout_width="186dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:fontFamily="@font/poppins_blackitalic"
+            android:lineSpacingExtra="-30sp"
+            android:scaleType="fitEnd"
+            android:text="RECYCLED UMBRELLA"
+            android:textAlignment="textEnd"
+            android:textColor="#80242424"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/imProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/umbrella" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
