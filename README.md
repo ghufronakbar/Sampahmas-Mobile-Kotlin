@@ -33,8 +33,11 @@ Application Display:
 5.Home Screen
 
 Hide ID
+
 <img src="https://github.com/ghufronakbar/sampahmas/assets/104415819/1cd2434c-c56e-4045-94e0-91563859d336" width="200"> 
+
 Show ID
+
 <img src="https://github.com/ghufronakbar/sampahmas/assets/104415819/b8b532de-4257-4c6e-815f-bd25283ed9e6" width="200">
 
 6. Nearby Menu
@@ -84,9 +87,11 @@ Show ID
 17. Checkout Product
 
 Detail Checkout
+
 <img src="https://github.com/ghufronakbar/sampahmas/assets/104415819/09e9a37e-bbdc-4563-b8d9-7b4056f9caf1" width="200">
 
 Select Payment Method
+
 <img src="https://github.com/ghufronakbar/sampahmas/assets/104415819/69fa2a5f-d60c-4a4b-8d09-8a4e6fa2b521" width="200">
 
 18. Profile
