@@ -1,6 +1,9 @@
 Application Name:  SAMPAHMAS
+
 Group Name:  HAYSTUDIO
+
 Member Name:
+
 1) Hasan Rama Sagita (Hipster)
 2) Wildan Syaifudin Ahmad (Hustler)
 3) Ghufron Akbar Maulana (Hacker)
